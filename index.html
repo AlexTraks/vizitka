@@ -8,18 +8,24 @@
         html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
             font-family: 'Arial', sans-serif;
             overflow-x: hidden; /* Запрет прокрутки влево-вправо */
         }
 
         .wrapper {
-            background: #000;
+            width: 1920px;
+            height: 1080px;
+            background: url('https://aquarium-fish-home.ru/wp-content/uploads/2023/06/675654333.jpg') no-repeat center center;
+            background-size: cover;
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px;
+            justify-content: space-between;
         }
 
         .content {
@@ -27,10 +33,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-grow: 1;
+            padding-top: 100px; /* Увеличиваем отступ сверху */
         }
 
         .container {
+            max-width: 1200px;
             width: 100%;
+            margin: 20px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -63,24 +73,35 @@
         }
 
         h1 {
-            font-size: 2em; /* Уменьшаем размер заголовка */
-            margin: 10px 0; /* Уменьшаем отступы */
+            font-size: 2.5em;
+            margin: 0;
             color: #4CAF50; /* Зеленый цвет заголовка */
         }
 
         h2 {
-            font-size: 1.5em; /* Уменьшаем размер заголовка */
-            margin: 10px 0; /* Уменьшаем отступы */
             color: #333;
             border-bottom: 2px solid #4CAF50; /* Подчеркивание заголовка зеленой линией */
             padding-bottom: 10px;
         }
 
-        p, g {
-            font-size: 1em; /* Уменьшаем размер текста */
-            line-height: 1.4;
-            margin-bottom: 10px; /* Уменьшаем отступ снизу */
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
             color: #555;
+        }
+
+        g {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: black;
+            background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый цвет фона текста */
+            padding: 10px; /* Отступы вокруг текста */
+            border-radius: 8px; /* Скругление углов */
+            max-width: 1200px; /* Максимальная ширина текста */
+            width: 100%; /* Ширина текста на всю доступную ширину */
+            margin: 0 auto; /* Автоматический отступ по горизонтали, выравнивание по центру */
+            padding-left: 20px; /* Добавление отступа слева */
+            padding-right: 20px; /* Добавление отступа справа */
         }
 
         footer {
@@ -89,36 +110,6 @@
             padding: 10px 0;
             text-align: center;
             width: 100%;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .wrapper {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.2em;
-            }
-            p, g {
-                font-size: 0.9em;
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            .wrapper {
-                padding: 5px;
-            }
-            h1 {
-                font-size: 1.2em;
-            }
-            h2 {
-                font-size: 1em;
-            }
-            p, g {
-                font-size: 0.8em;
-            }
         }
     </style>
 </head>
@@ -144,7 +135,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                         <tr>
+                        <tr>
                             <td>1.</td>
                             <td>Автокран Zoomlion</td>
                             <td> г/п 25 тонн, вылет стрелы 39,2 м.</td>
@@ -219,6 +210,7 @@
                             <td>Топливозаправщик Камаз</td>
                             <td> цистерна объем 10 м3</td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -227,3 +219,6 @@
             © 2024 Организация Спецтехника. Все права защищены.
         </footer>
     </div>
+
+</body>
+</html>
