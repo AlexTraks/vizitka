@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организация Спецтехника</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden; /* Запрет прокрутки влево-вправо */
+        }
+
+        .wrapper {
+            width: 1920px;
+            height: 1080px;
+            background: url('https://aquarium-fish-home.ru/wp-content/uploads/2023/06/675654333.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            padding-top: 200px; /* Увеличиваем отступ сверху */
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow-x: auto; /* Добавлено для горизонтальной прокрутки таблицы */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #4CAF50; /* Зеленый цвет заголовка */
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50; /* Подчеркивание заголовка зеленой линией */
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        g {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: black;
+            background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый цвет фона текста */
+            padding: 10px; /* Отступы вокруг текста */
+            border-radius: 8px; /* Скругление углов */
+            max-width: 1200px; /* Максимальная ширина текста */
+            width: 100%; /* Ширина текста на всю доступную ширину */
+            margin: 0 auto; /* Автоматический отступ по горизонтали, выравнивание по центру */
+            padding-left: 20px; /* Добавление отступа слева */
+            padding-right: 20px; /* Добавление отступа справа */
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Черный фон с прозрачностью */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <g>
+                000 «ТЭК АЛЕКС ТРАК»<br>
+                Юр./факт.адрес: 45044, Самарская обл, Тольятти г, Офицерская ул, дом 2а, помещение 16<br>
+                ИНН/КПП 6319232720/632101001 ОГРН 1186313087487<br>
+                т. -----
+            </g>
+            <div class="container">
+                <h1>Организация Спецтехника</h1>
+                <h2>О нас</h2>
+                <p>Мы предоставляем в аренду специализированную технику для строительных и промышленных работ. В нашем парке техники вы найдете краны, тракторы, экскаваторы и другую спецтехнику для выполнения различных задач.</p>
+                <h2>Техника в наличии</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="padding-left: 20px;">№</th>
+                            <th style="padding-left: 20px;">Модель</th>
+                            <th style="padding-left: 20px;">Характеристики</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Автокран Zoomlion</td>
+                            <td> г/п 25 тонн, вылет стрелы 39,2 м.</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Автокран Камаз</td>
+                            <td> г/п 40 тонн, вылет стрелы 34 м.</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Автокран SANY</td>
+                            <td> г/п 50 тонн, вылет стрелы 43 м.</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Экскаватор-погрузчик JCB 3CX</td>
+                            <td> объем ковша 0,28 м3</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Экскаватор Komatsu PC200</td>
+                            <td> объем ковша 1,0 м3</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Экскаватор Volvo220</td>
+                            <td> объем ковша 1,44 м3</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Тралы (4 единицы)</td>
+                            <td> г/п 40 тонн</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>Самосвал Камаз</td>
+                            <td> г/п 15 тонн, объем кузова 10 м3, вездеход</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Каток Hyundai 140</td>
+                            <td> вес 14 тонн</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Поливомоечная машина КО860</td>
+                            <td> бочка 9 м3, щетка, отвал, пескоразбрасыватель</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>КМУ Камаз</td>
+                            <td> стрела 7 т, борт 10 т</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Каналопромывачная машина</td>
+                            <td> КО 560</td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>Илосос</td>
+                            <td> КО 560 (глубина до 8-10 м)</td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>Топливозаправщик Газон</td>
+                            <td> цистерна объем 5 м3</td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td>Топливозаправщик Камаз</td>
+                            <td> цистерна объем 10 м3</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            © 2024 Организация Спецтехника. Все права защищены.
+        </footer>
+    </div>
+
+</body>
+</html>
